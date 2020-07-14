@@ -1,0 +1,31 @@
+<main>
+	<div ng-click="$ctrl.toggleImagens()" ng-class="{'active':$ctrl.modalImagens}" class="modal modal-imagens">
+		<h2>Escolha sua foto</h2>
+		<div class="imagens-container">
+			<img class="miniatura-imagem" ng-repeat="imagem in $ctrl.imagens" src="{{imagem.url}}" ng-click="$ctrl.escolheImagem(imagem.id)"/>
+		</div>
+	</div>
+	<div ng-click="$ctrl.toggleLogos()" ng-class="{'active':$ctrl.modalLogos}" class="modal modal-logos">
+		<h2>Escolha seu ícone</h2>
+		<div class="logos-container">
+			<div ng-repeat="logo in $ctrl.logos" class="miniatura-logo">
+				<img  src="{{logo.url}}" ng-click="$ctrl.escolheLogo(logo.id)"/>
+			</div>
+		</div>
+	</div>
+  <div class="container">
+		<div class="logo-container">
+			<img  ng-click="$ctrl.toggleLogos()"  src="{{$ctrl.logo.url}}"/>
+			<div id="marca">
+				<p>Sua Marca</p>
+			</div>
+		</div>
+		<div id="titulo">
+			<h1>Insira aqui um título condizente para a sua imagem, você pode alterar esse título como bem entender</h1>
+		</div>
+		<img ng-click="$ctrl.toggleImagens()" class="imagem-principal" src="{{$ctrl.imagem.url}}" />
+		<div id="url">
+			<p>www.seusite.com.br<p>
+		</div>
+	</div>
+</main>

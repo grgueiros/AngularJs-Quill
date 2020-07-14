@@ -1,0 +1,85 @@
+.modal {
+	display:none;
+	position:fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	z-index: 1000;
+	background-color: rgba(#000,0.9);
+	text-align: center;
+	color: white;
+}
+.active {
+	display:initial;
+}
+.imagens-container, .logos-container {
+	width:80%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+
+	.miniatura-imagem {
+		width: 30%;
+		margin: 1em 0;
+	}
+
+	.miniatura-logo {
+		width: 30%;
+		margin: 1em 0;
+	}
+}
+
+.container {
+	display:flex;
+	width:80%;
+	margin: 10vh auto;
+	flex-direction:column;
+
+	.logo-container{
+		display:flex;
+		align-items:end;
+		max-height: 1.5em;
+		margin: 1em;
+
+		img {
+			max-height:2.5em;
+			margin: 0 .5em 0 0;
+		}
+	}
+	.imagem-principal {
+		width:90%;
+		cursor:pointer;
+	}
+}
+
+#titulo {
+	width: 90%;
+
+	.ql-editor {
+		text-align: justify;
+		font-size: 1.5em;
+		font-family: sans-serif;
+	}
+}
+
+#marca {
+	.ql-editor {
+		padding: 0 .3em;
+		font-size: 1.8em;
+		color: grey;
+		font-style: italic;
+	}
+}
+
+#url {
+	.ql-editor {
+		padding:0;
+		margin: .5em 0;
+		font-size: 1.8em;
+		font-weight: bold;
+		color:grey;
+	}
+}
+
