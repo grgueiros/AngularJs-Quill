@@ -14,7 +14,7 @@ git clone git@github.com:GRGueiros/angular-js-quilljs.git
 ```
 _ou então faça o [download do zip](https://github.com/GRGueiros/angular-js-quilljs/archive/master.zip)_
 
-2. Para baixar as dependências no terminal, dentro do diretório execute o comando e aguarde a instalação até o fim:
+2. Para baixar as dependências:  no terminal, dentro do diretório do projeto execute o seguinte comando e aguarde a instalação até o fim:
 
 ```
 npm install
